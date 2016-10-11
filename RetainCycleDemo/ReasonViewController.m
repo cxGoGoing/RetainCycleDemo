@@ -1,22 +1,22 @@
 //
-//  HomeViewController.m
+//  ReasonViewController.m
 //  RetainCycleDemo
 //
 //  Created by chengxun on 16/10/11.
 //  Copyright © 2016年 chengxun. All rights reserved.
 //
 
-#import "HomeViewController.h"
 #import "ReasonViewController.h"
-@interface HomeViewController ()
+
+@interface ReasonViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation ReasonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
@@ -24,12 +24,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)dealloc{
+    NSLog(@"被杀死了");
+}
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UINavigationController * nav = [[UINavigationController alloc]init];
-    ReasonViewController * reasonVc = [[ReasonViewController alloc]init];
-    [nav addChildViewController:reasonVc];
-    [self presentViewController:nav animated:YES completion:nil];
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*
