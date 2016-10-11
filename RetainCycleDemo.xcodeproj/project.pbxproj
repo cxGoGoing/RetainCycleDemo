@@ -13,6 +13,7 @@
 		57C850A11DACB89C00D0E3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C8509F1DACB89C00D0E3CA /* LaunchScreen.storyboard */; };
 		57C850AC1DACB89C00D0E3CA /* RetainCycleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850AB1DACB89C00D0E3CA /* RetainCycleDemoTests.m */; };
 		57C850B71DACB89C00D0E3CA /* RetainCycleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850B61DACB89C00D0E3CA /* RetainCycleDemoUITests.m */; };
+		57C850C61DACB8C300D0E3CA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850C51DACB8C300D0E3CA /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		57C850B21DACB89C00D0E3CA /* RetainCycleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetainCycleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C850B61DACB89C00D0E3CA /* RetainCycleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleDemoUITests.m; sourceTree = "<group>"; };
 		57C850B81DACB89C00D0E3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C850C41DACB8C300D0E3CA /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		57C850C51DACB8C300D0E3CA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				57C8509F1DACB89C00D0E3CA /* LaunchScreen.storyboard */,
 				57C850A21DACB89C00D0E3CA /* Info.plist */,
 				57C850971DACB89C00D0E3CA /* Supporting Files */,
+				57C850C41DACB8C300D0E3CA /* HomeViewController.h */,
+				57C850C51DACB8C300D0E3CA /* HomeViewController.m */,
 			);
 			path = RetainCycleDemo;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			files = (
 				57C8509C1DACB89C00D0E3CA /* AppDelegate.m in Sources */,
 				57C850991DACB89C00D0E3CA /* main.m in Sources */,
+				57C850C61DACB8C300D0E3CA /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RetainCycleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshouyi.com.RetainCycleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RetainCycleDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshouyi.com.RetainCycleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
