@@ -6,10 +6,12 @@
 //  Copyright © 2016年 chengxun. All rights reserved.
 //
 
+
+
 #import "HomeViewController.h"
 #import "ReasonViewController.h"
 @interface HomeViewController ()
-
+@property (nonatomic,copy)NSString * titleHome;
 @end
 
 @implementation HomeViewController
@@ -27,6 +29,11 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     UINavigationController * nav = [[UINavigationController alloc]init];
     ReasonViewController * reasonVc = [[ReasonViewController alloc]init];
+    self.titleHome = @"123";
+    reasonVc.backIndex = ^(BOOL isBack){
+        self.titleHome = isBack?@"isBack":@"isNotBack";
+        NSLog(@"--------wocao--------%@---",self.titleHome);
+    };
     [nav addChildViewController:reasonVc];
     [self presentViewController:nav animated:YES completion:nil];
     

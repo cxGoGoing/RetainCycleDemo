@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^BackIndex)(BOOL isBack);
 @interface ReasonViewController : UIViewController
-
+@property (nonatomic,copy)BackIndex backIndex;
 @end

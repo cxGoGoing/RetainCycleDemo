@@ -27,10 +27,13 @@
 
 - (void)dealloc{
     NSLog(@"被杀死了");
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        !self.backIndex?:self.backIndex(YES);
+    }];
 }
 
 /*
