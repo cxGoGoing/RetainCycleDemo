@@ -10,6 +10,7 @@
 
 #import "HomeViewController.h"
 #import "ReasonViewController.h"
+#import "YYFPSLabel.h"
 @interface HomeViewController ()
 @property (nonatomic,copy)NSString * titleHome;
 @end
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
     // Do any additional setup after loading the view.
 }
 

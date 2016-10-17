@@ -7,7 +7,7 @@
 //
 
 #import "ReasonViewController.h"
-
+#import "YYFPSLabel.h"
 @interface ReasonViewController ()
 
 @end
@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
+    YYFPSLabel * fpsLabel = [[YYFPSLabel alloc]init];
+    fpsLabel.frame = CGRectMake(200, 200, 50, 30);
+    [fpsLabel sizeToFit];
+    [self.view addSubview:fpsLabel];
     // Do any additional setup after loading the view.
 }
 
