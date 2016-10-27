@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390427B6FD115DAF0D4E6862 /* libPods-RetainCycleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBD04A63568C382185F084A /* libPods-RetainCycleDemo.a */; };
 		57C850991DACB89C00D0E3CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850981DACB89C00D0E3CA /* main.m */; };
 		57C8509C1DACB89C00D0E3CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8509B1DACB89C00D0E3CA /* AppDelegate.m */; };
 		57C8509E1DACB89C00D0E3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C8509D1DACB89C00D0E3CA /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CF93429BB37DEE475C5BFE /* Pods-RetainCycleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetainCycleDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RetainCycleDemo/Pods-RetainCycleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1CBD04A63568C382185F084A /* libPods-RetainCycleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RetainCycleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C850941DACB89C00D0E3CA /* RetainCycleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C850981DACB89C00D0E3CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57C8509A1DACB89C00D0E3CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +61,7 @@
 		57E7C0491DB49A420097CBE7 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		57E7C04A1DB49A420097CBE7 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		57E7C04B1DB49A420097CBE7 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		903AEAFFA9DDD32103A1504C /* Pods-RetainCycleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetainCycleDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RetainCycleDemo/Pods-RetainCycleDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390427B6FD115DAF0D4E6862 /* libPods-RetainCycleDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +97,8 @@
 				57C850AA1DACB89C00D0E3CA /* RetainCycleDemoTests */,
 				57C850B51DACB89C00D0E3CA /* RetainCycleDemoUITests */,
 				57C850951DACB89C00D0E3CA /* Products */,
+				818DDF28AB19E1CBD0E8040D /* Pods */,
+				954EB34B6693E8FCCC1CC621 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +167,23 @@
 			path = YYFPSLabel;
 			sourceTree = "<group>";
 		};
+		818DDF28AB19E1CBD0E8040D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09CF93429BB37DEE475C5BFE /* Pods-RetainCycleDemo.debug.xcconfig */,
+				903AEAFFA9DDD32103A1504C /* Pods-RetainCycleDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		954EB34B6693E8FCCC1CC621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBD04A63568C382185F084A /* libPods-RetainCycleDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57C850BB1DACB89C00D0E3CA /* Build configuration list for PBXNativeTarget "RetainCycleDemo" */;
 			buildPhases = (
+				F9F8FFFFBC47AF055C34D4DF /* [CP] Check Pods Manifest.lock */,
 				57C850901DACB89C00D0E3CA /* Sources */,
 				57C850911DACB89C00D0E3CA /* Frameworks */,
 				57C850921DACB89C00D0E3CA /* Resources */,
+				7B974096D74CCE1A4A03A5D8 /* [CP] Embed Pods Frameworks */,
+				0D673488C71A224623913225 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +310,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D673488C71A224623913225 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RetainCycleDemo/Pods-RetainCycleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B974096D74CCE1A4A03A5D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RetainCycleDemo/Pods-RetainCycleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F8FFFFBC47AF055C34D4DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57C850901DACB89C00D0E3CA /* Sources */ = {
@@ -423,6 +498,7 @@
 		};
 		57C850BC1DACB89C00D0E3CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CF93429BB37DEE475C5BFE /* Pods-RetainCycleDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RetainCycleDemo/Info.plist;
@@ -435,6 +511,7 @@
 		};
 		57C850BD1DACB89C00D0E3CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 903AEAFFA9DDD32103A1504C /* Pods-RetainCycleDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RetainCycleDemo/Info.plist;

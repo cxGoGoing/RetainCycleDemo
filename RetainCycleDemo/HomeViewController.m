@@ -13,6 +13,7 @@
 #import "YYFPSLabel.h"
 @interface HomeViewController ()
 @property (nonatomic,copy)NSString * titleHome;
+@property (nonatomic,strong)UITableView * tableView;
 @end
 
 @implementation HomeViewController
