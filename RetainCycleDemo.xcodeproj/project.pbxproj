@@ -16,6 +16,7 @@
 		57C850B71DACB89C00D0E3CA /* RetainCycleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850B61DACB89C00D0E3CA /* RetainCycleDemoUITests.m */; };
 		57C850C61DACB8C300D0E3CA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850C51DACB8C300D0E3CA /* HomeViewController.m */; };
 		57C850C91DACB9EF00D0E3CA /* ReasonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C850C81DACB9EF00D0E3CA /* ReasonViewController.m */; };
+		57CCFC011DC2037700DC82B2 /* ReasonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CCFC001DC2037700DC82B2 /* ReasonCell.m */; };
 		57E7C04C1DB49A420097CBE7 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7C0491DB49A420097CBE7 /* YYFPSLabel.m */; };
 		57E7C04D1DB49A420097CBE7 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E7C04B1DB49A420097CBE7 /* YYWeakProxy.m */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,8 @@
 		57C850C51DACB8C300D0E3CA /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		57C850C71DACB9EF00D0E3CA /* ReasonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonViewController.h; sourceTree = "<group>"; };
 		57C850C81DACB9EF00D0E3CA /* ReasonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReasonViewController.m; sourceTree = "<group>"; };
+		57CCFBFF1DC2037700DC82B2 /* ReasonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReasonCell.h; sourceTree = "<group>"; };
+		57CCFC001DC2037700DC82B2 /* ReasonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReasonCell.m; sourceTree = "<group>"; };
 		57E7C0481DB49A420097CBE7 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		57E7C0491DB49A420097CBE7 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		57E7C04A1DB49A420097CBE7 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				57C850C51DACB8C300D0E3CA /* HomeViewController.m */,
 				57C850C71DACB9EF00D0E3CA /* ReasonViewController.h */,
 				57C850C81DACB9EF00D0E3CA /* ReasonViewController.m */,
+				57CCFBFF1DC2037700DC82B2 /* ReasonCell.h */,
+				57CCFC001DC2037700DC82B2 /* ReasonCell.m */,
 			);
 			path = RetainCycleDemo;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				57C850C91DACB9EF00D0E3CA /* ReasonViewController.m in Sources */,
 				57E7C04C1DB49A420097CBE7 /* YYFPSLabel.m in Sources */,
 				57E7C04D1DB49A420097CBE7 /* YYWeakProxy.m in Sources */,
+				57CCFC011DC2037700DC82B2 /* ReasonCell.m in Sources */,
 				57C8509C1DACB89C00D0E3CA /* AppDelegate.m in Sources */,
 				57C850991DACB89C00D0E3CA /* main.m in Sources */,
 				57C850C61DACB8C300D0E3CA /* HomeViewController.m in Sources */,

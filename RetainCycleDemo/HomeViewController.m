@@ -13,7 +13,7 @@
 #import "YYFPSLabel.h"
 @interface HomeViewController ()
 @property (nonatomic,copy)NSString * titleHome;
-@property (nonatomic,strong)UITableView * tableView;
+
 @end
 
 @implementation HomeViewController
@@ -25,20 +25,16 @@
     // Do any additional setup after loading the view.
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UINavigationController * nav = [[UINavigationController alloc]init];
+    //UINavigationController * nav = [[UINavigationController alloc]init];
     ReasonViewController * reasonVc = [[ReasonViewController alloc]init];
-    self.titleHome = @"123";
-    reasonVc.backIndex = ^(BOOL isBack){
-        self.titleHome = isBack?@"isBack":@"isNotBack";
-        NSLog(@"--------wocao--------%@---",self.titleHome);
-    };
-    [nav addChildViewController:reasonVc];
-    [self presentViewController:nav animated:YES completion:nil];
+    [self.navigationController pushViewController:reasonVc animated:YES];
     
 }
 

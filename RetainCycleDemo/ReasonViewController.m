@@ -8,37 +8,58 @@
 
 #import "ReasonViewController.h"
 #import "YYFPSLabel.h"
-@interface ReasonViewController ()
-
+#import "ReasonCell.h"
+#import <PureLayout.h>
+@interface ReasonViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic,weak)UITableView * tableView;
 @end
 
 @implementation ReasonViewController
-
+- (UITableView*)tableView{
+    if(!_tableView){
+        UITableView * tableView = [[UITableView alloc]init];
+        tableView.dataSource = self;
+        tableView.delegate = self;
+        tableView.rowHeight = 80;
+        [tableView registerClass:[ReasonCell class] forCellReuseIdentifier:NSStringFromClass([ReasonCell class])];
+        [self.view addSubview:(_tableView = tableView)];
+    }
+    return _tableView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    YYFPSLabel * fpsLabel = [[YYFPSLabel alloc]init];
-    fpsLabel.frame = CGRectMake(200, 200, 50, 30);
-    [fpsLabel sizeToFit];
-    [self.view addSubview:fpsLabel];
+    [self.tableView autoPinEdgesToSuperviewEdges];
     // Do any additional setup after loading the view.
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 30;
+}
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ReasonCell * cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([ReasonCell class])];
+    cell.indexPath = indexPath;
+    cell.didTouch = ^(NSIndexPath*indexPath){
+        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        NSLog(@"======= %@ =======",indexPath);
+    };
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)dealloc{
     NSLog(@"被杀死了");
 
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self dismissViewControllerAnimated:YES completion:^{
-        !self.backIndex?:self.backIndex(YES);
-    }];
-}
 
 /*
 #pragma mark - Navigation
